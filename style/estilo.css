@@ -1,0 +1,171 @@
+body{
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+}
+
+nav{
+    background-color: rgba(182, 179, 179, 0.575);
+    padding: 5px;
+    position: fixed;
+    margin: 10px;
+    z-index: 999;
+}
+nav a{
+    margin: 5px;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(10, 10, 201);
+}
+
+h2{
+    text-align: center;
+    margin: 100px 0 30px;
+}
+
+.logo{
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: -80px;
+    left: 590px;
+    border: 4px solid blue;
+}
+
+.background{
+    background: no-repeat url("/images/background-image.jpg");
+    background-size: cover;
+    background-position:bottom;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: 80px;
+}
+
+/* Home */
+button{
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 1px;
+    box-shadow: 3px 1px  black;
+    background-color: gray;
+}
+
+.fechas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin: 80px auto 100px;
+}
+
+.curso,
+.curso3{
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso3 > p{
+margin-left: 15px;
+
+}
+
+.curso:nth-of-type(1),
+.curso:nth-of-type(2)
+{
+    border-bottom: 1px solid gray;
+}
+
+.negrita1{
+    font-size: 1.8rem;
+}
+
+.negrita1,
+.negrita2{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.fecha{
+    margin: 0 25px 0 5px;
+
+}
+
+.fecha p,
+.modalidad p{
+    margin: 1px;
+}
+
+.modalidad{
+    margin: 1px;
+    margin-right: 50px;
+}
+
+/*CONOCENOS*/
+.conocenos{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profesores{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.profesor{
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto{
+    margin-bottom: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.nombre{
+    margin-top: 20px;
+}
+
+/*CONTACTO*/
+.contacto{
+    margin: 52px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto > p {
+margin: 1px;
+}
+
+.telf,
+.mail{
+    font-weight: 700;
+}
