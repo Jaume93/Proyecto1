@@ -435,9 +435,6 @@ table{
     width: 60%;
     height: 60%;
     border-collapse: collapse;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 thead th{
