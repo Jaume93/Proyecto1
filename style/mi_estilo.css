@@ -411,12 +411,7 @@ svg{
 }
 
 /*Info*/
-.container{
-       display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/*Tabla Alumnos*/
 table{
     border-collapse: collapse;
     margin: auto;
@@ -434,29 +429,6 @@ th{
     padding: 10px;
 }
 
-.container_lista_horario{
-    display: flex;
-    justify-content: center;
-    line-height: 1.8rem;
-}
-
-/*Lista Conocimientos*/
-:not(li) > * > li{
-    list-style: none;
-    font-weight:bold;
-}
-
-li > * > li{
-    font-weight:normal;
-}
-
-.container_lista_conocimientos{
-    display: flex;
-    justify-content: center;
-}
-
-
-/*Pseudo-elements*/
 tr:hover{
     background: rgba(234, 234, 240, 0.486);
 }
@@ -488,4 +460,43 @@ td:nth-of-type(2){
 th:nth-of-type(4),
 td:nth-of-type(3){
     color:rgb(150, 148, 69);
+}
+
+
+/*Lista Horario*/
+dt{
+    font-weight: bold;
+}
+
+.container_lista_horario{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    line-height: 1.8rem;
+}
+
+/*Lista Conocimientos*/
+
+li{
+    line-height: 2rem;
+}
+
+li > * > li{
+    font-weight:normal;
+}
+
+:not(li) > * > li{
+    list-style: none;
+    font-weight:bold;
+}
+
+.container_lista_conocimientos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_lista_conocimientos  p {
+    font-weight: bold;
+    font-size: 2rem;
 }
