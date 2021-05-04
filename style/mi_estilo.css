@@ -99,6 +99,7 @@ h1 > span:hover{
 /*Footer*/
 footer{
     height: 50px;
+    width: 100%;
     background: rgb(14, 13, 13);
     color: darkgrey;
     list-style: none;
@@ -160,9 +161,9 @@ h2{
     text-shadow: 8px 4px 4px rgb(109, 110, 116);;
     font-size: 3.5rem ;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 139px;
     letter-spacing: 0.25rem;
 }
 
@@ -302,13 +303,6 @@ button:hover{
 }
 
 /*CONOCENOS*/
-.conocenos{
-    margin-top: 0;
-    padding-top: 130px;
-    color: rgb(63, 63, 143);
-    text-shadow: 8px 4px 4px rgb(109, 110, 116);;
-}
-
 .conocenos_descripcion{
     margin: 65px auto 150px auto;
     width: 80%;
@@ -386,11 +380,6 @@ svg{
     width: 40px;
 }
 
-.contacto{
-    padding-top: 139px;
-    margin-top: 0;
-}
-
 .contacto_descripcion{
     margin: 25px auto;
     padding-top: 15px;
@@ -422,22 +411,11 @@ svg{
 }
 
 /*Info*/
-.tabla{
-    height: 92.4vh;
-    /* padding-top: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border-collapse: collapse; */
-}
-
+/*Tabla Alumnos*/
 table{
-    width: 60%;
-    height: 60%;
     border-collapse: collapse;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    margin: auto;
+    width: 80%;
 }
 
 thead th{
@@ -447,26 +425,78 @@ thead th{
 td,
 th{
     border-bottom: 1px solid black;
-    text-align: left;
-}
-
-td{
-    transform: rotateY(90deg);
-}
-
-td:active{
-    transform: none;
+    text-align: center;
+    padding: 10px;
 }
 
 tr:hover{
     background: rgba(234, 234, 240, 0.486);
 }
 
-.alexandra{
-    height: auto;
-    width: auto;
+tr:hover th,
+tr:hover td{
+    color: rgb(21, 51, 160);
 }
-.alexandra:active{
-    background: darkmagenta;
-    transform: rotateY(90deg);
+
+th:last-of-type,
+td:last-of-type{
+    color:rgb(13, 151, 13);
+}
+
+th:first-child{
+    color:rgb(66, 4, 4);
+}
+
+th:nth-of-type(2),
+td:nth-of-type(1){
+    color: rgb(177, 16, 16);
+}
+
+th:nth-of-type(3),
+td:nth-of-type(2){
+    color:rgb(212, 118, 41);
+}
+
+th:nth-of-type(4),
+td:nth-of-type(3){
+    color:rgb(150, 148, 69);
+}
+
+
+/*Lista Horario*/
+dt{
+    font-weight: bold;
+}
+
+.container_lista_horario{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    line-height: 1.8rem;
+}
+
+/*Lista Conocimientos*/
+
+li{
+    line-height: 2rem;
+}
+
+li > * > li{
+    font-weight:normal;
+}
+
+:not(li) > * > li{
+    list-style: none;
+    font-weight:bold;
+}
+
+.container_lista_conocimientos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_lista_conocimientos  p {
+    font-weight: bold;
+    font-size: 2rem;
 }
