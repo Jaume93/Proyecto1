@@ -657,6 +657,7 @@ textarea{
 
 @media screen and (max-width: 768px){
 
+    /*NAV*/
     .navbar{
         padding: 0;
         font-size: 15px;
@@ -673,12 +674,16 @@ textarea{
         margin: 0;  
     }
 
-    nav li{
-        padding: 0;
-        margin: 0;  
-        display: flex;
+    .navbar li{
+        padding: 5px;
     }
 
+    h2{
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    /*INSCRIPCION FORMULARIO*/
     form{
         width: 90%;
     }
@@ -701,7 +706,7 @@ textarea{
     .informacion_curso{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
     }
 
     .modalidad_curso,
@@ -709,10 +714,11 @@ textarea{
     .tipo_curso{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         border-bottom: 1px solid gray;
         padding-bottom: 10px;
         margin-bottom: 10px;
+        width: 100%;
     }
 
     .tiempo_curso label{
@@ -731,4 +737,65 @@ textarea{
     .enviar{
         display: flex;
         justify-content: center;
+    }
+
+    /*CONTACTO*/
+    .contacto_descripcion{
+        padding: 0;
+        margin: 15px auto;
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .contacto_vias_de_contacto{
+        margin: 0;
+    }
+
+    .contacto_vias_de_contacto:last-of-type{
+        margin-bottom: 25px;
+    }
+
+    /*CONOCENOS*/
+    .conocenos_descripcion{
+        font-size: 1rem;
+        text-align: left;
+        margin: 40px auto;
+        line-height: 30px;
+    }
+
+    .profesor{
+        width: 100%;
+        padding: 25px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+    }
+
+    .foto_profe{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto_profe .foto{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .foto_profe .nombre_profe{
+        font-size: 1.2rem;
+    }
+
+    .info_profe{
+        width: 65%;
+        font-size: 0.9rem;
+        line-height: 30px;
+        text-align:justify;
+    }
+
+    /*INFO*/
+    .container_tabla{
+        width: 60%;
     }
