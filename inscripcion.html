@@ -31,57 +31,55 @@
         <h2>Formulario</h2>
 
         <form action="formulario">
-            <h4>Tus datos</h4>
-            <div class="informacion_personal_1">
+            <h4>Datos</h4>
+            <div class="informacion_personal">
                 <label for="Nombre">Nombre:</label>
-                <input type="text" name="Nombre" id="Nombre" required placeholder="Nombre">
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
                 <label for="Apellidos">Apellidos:</label>
-                <input type="text" name="Apellidos" id="Apellidos" required placeholder="Apellidos">
+                <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos">
             </div>
-            <!-- <label for="Poblacion"></label>
-            <input type="text" name="Poblacion" id="Poblacion" required placeholder="Poblacion"> -->
-            <div class="informacion_personal_2">
+            <div class="informacion_personal">
                 <label for="Email">E-mail:</label>
-                <input type="email" name="Email" id="Email" required placeholder="Email">
+                <input type="email" name="email" id="email" required placeholder="Email">
 
                 <label for="Telefono">Telefono:</label>
-                <input type="tel" name="Telefono" id="Telefono" required minlength="9" maxlength="11"
+                <input type="tel" name="telefono" id="telefono" required minlength="9" maxlength="11"
                     placeholder="Telefono">
             </div>
             <h4>Tipo de curso</h4>
             <div class="informacion_curso">
                 <div class="modalidad_curso">
                     <div class="full_stack_curso">
+                        <input type="radio" name="modalidad" id="full_stack" required>
                         <label for="full_stack">Web Developer Full-Stack</label>
-                        <input type="radio" name="full_stack" id="full_stack">
                     </div>
                     <div class="front_end_curso">
+                        <input type="radio" name="modalidad" id="fron_end">
                         <label for="fron_end">Web Developer Front-End</label>
-                        <input type="radio" name="fron_end" id="fron_end">
                     </div>
                     <div class="back_end_curso">
+                        <input type="radio" name="modalidad" id="back_end">
                         <label for="back_end">Web Developer Back-End</label>
-                        <input type="radio" name="back_end" id="back_end">
                     </div>
                 </div>
                 <div class="tiempo_curso">
                     <div class="full_time_curso">
+                        <input type="radio" name="time" id="full_time">
                         <label for="full_time">Full - Time</label>
-                        <input type="radio" name="full_time" id="full_time">
                     </div>
                     <div class="part_time_curso">
+                        <input type="radio" name="time" id="part_time">
                         <label for="part_time">Part - Time</label>
-                        <input type="radio" name="part_time" id="part_time">
                     </div>
                 </div>
                 <div class="tipo_curso">
                     <div class="online_curso">
+                        <input type="radio" name="tipo" id="online">
                         <label for="online">Online</label>
-                        <input type="radio" name="online" id="online">
                     </div>
                     <div class="planeta_marte_curso">
+                        <input type="radio" name="tipo" id="planeta_marte">
                         <label for="planeta_marte">Planeta Marte</label>
-                        <input type="radio" name="planeta_marte" id="planeta_marte">
                     </div>
                 </div>
             </div>

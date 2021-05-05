@@ -542,15 +542,9 @@ textarea{
     background: none;
 }
 
-.informacion_personal_1{
+.informacion_personal{
     display: flex;
     align-items: flex-start;
-}
-
-.informacion_personal_2{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
 .informacion_curso{
@@ -616,7 +610,7 @@ textarea{
 .terminos_condiciones,
 .recibir_ofertas{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:center;
     padding: 0;
     margin: 0;  
@@ -625,7 +619,6 @@ textarea{
 .enviar{
     display: flex;
     justify-content: flex-end;
-   
 }
 
 #full_stack,
@@ -661,3 +654,81 @@ textarea{
     box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.8);
     transition: 0.5s;
 }
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+        padding: 0;
+        font-size: 15px;
+        position: static;
+    }
+
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;  
+    }
+
+    nav li{
+        padding: 0;
+        margin: 0;  
+        display: flex;
+    }
+
+    form{
+        width: 90%;
+    }
+    
+    .informacion_personal{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .informacion_personal > label{
+        display: none;
+    }
+    
+    .informacion_personal > input{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .informacion_curso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modalidad_curso,
+    .tiempo_curso,
+    .tipo_curso{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tiempo_curso label{
+        width: 100px;
+    }
+
+    #encontrado{
+        width: 100%;
+    }
+
+    .checkboxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enviar{
+        display: flex;
+        justify-content: center;
+    }
