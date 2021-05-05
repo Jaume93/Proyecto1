@@ -31,55 +31,71 @@
         <h2>Formulario</h2>
 
         <form action="formulario">
-            <p>Tus datos</p>
+            <h4>Tus datos</h4>
             <div class="informacion_personal_1">
-                <label for="Nombre">Nombre</label>
+                <label for="Nombre">Nombre:</label>
                 <input type="text" name="Nombre" id="Nombre" required placeholder="Nombre">
-
-                <label for="Apellidos">Apellidos</label>
+                <label for="Apellidos">Apellidos:</label>
                 <input type="text" name="Apellidos" id="Apellidos" required placeholder="Apellidos">
             </div>
             <!-- <label for="Poblacion"></label>
             <input type="text" name="Poblacion" id="Poblacion" required placeholder="Poblacion"> -->
             <div class="informacion_personal_2">
-                <label for="Email">E-mail</label>
+                <label for="Email">E-mail:</label>
                 <input type="email" name="Email" id="Email" required placeholder="Email">
 
-                <label for="Telefono">Telefono</label>
+                <label for="Telefono">Telefono:</label>
                 <input type="tel" name="Telefono" id="Telefono" required minlength="9" maxlength="11"
                     placeholder="Telefono">
             </div>
-            <p>Tipo de curso</p>
+            <h4>Tipo de curso</h4>
             <div class="informacion_curso">
-                <label for="modalidad"></label>
-                <select name="modalidad" id="modalidad" required>
-                    <option value="selecion">Estoy interesado en el curso...</option>
-                    <option value="Full-Time">Web Developer Full-Stack</option>
-                    <option value="Full-Time">Web Developer Front-End</option>
-                    <option value="Full-Time">Web Developer Back-End</option>
-                </select>
-
-                <select name="tiempo" id="tiempo" required>
-                    <option value="selecion">El tiempo que tengo para dedicar al curso es...</option>
-                    <option value="Full-Time">Full-Time</option>
-                    <option value="Part-Time">Part-Time</option>
-
-                </select>
-
-                <select name="tipo" id="tipo" required>
-                    <option value="selecion">Selecione una opcion</option>
-                    <option value="online">Online</option>
-                    <option value="presencial">Planeta Marte</option>
-                </select>
+                <div class="modalidad_curso">
+                    <div class="full_stack_curso">
+                        <label for="full_stack">Web Developer Full-Stack</label>
+                        <input type="radio" name="full_stack" id="full_stack">
+                    </div>
+                    <div class="front_end_curso">
+                        <label for="fron_end">Web Developer Front-End</label>
+                        <input type="radio" name="fron_end" id="fron_end">
+                    </div>
+                    <div class="back_end_curso">
+                        <label for="back_end">Web Developer Back-End</label>
+                        <input type="radio" name="back_end" id="back_end">
+                    </div>
+                </div>
+                <div class="tiempo_curso">
+                    <div class="full_time_curso">
+                        <label for="full_time">Full - Time</label>
+                        <input type="radio" name="full_time" id="full_time">
+                    </div>
+                    <div class="part_time_curso">
+                        <label for="part_time">Part - Time</label>
+                        <input type="radio" name="part_time" id="part_time">
+                    </div>
+                </div>
+                <div class="tipo_curso">
+                    <div class="online_curso">
+                        <label for="online">Online</label>
+                        <input type="radio" name="online" id="online">
+                    </div>
+                    <div class="planeta_marte_curso">
+                        <label for="planeta_marte">Planeta Marte</label>
+                        <input type="radio" name="planeta_marte" id="planeta_marte">
+                    </div>
+                </div>
             </div>
+            <h4>Dejanos tu mensaje</h4>
             <div class="textarea">
                 <textarea name="textarea" id="textarea" cols="60" rows="10" maxlength="500"
                     placeholder="Hola! Me gustaria saber..."></textarea>
             </div>
+
             <div class="encontrado">
-                <label for="encontrado">¿Como nos has encontrado?</label>
+                <h4>¿Como nos has encontrado?</h4>
+                <label for="encontrado"></label>
                 <select name="encontrado" id="encontrado" required>
-                    <option value="selecion">Selecione una opcion</option>
+                    <option value="selecion">Selecione una opción</option>
                     <option value="online">Por internet</option>
                     <option value="online">A través de redes sociales</option>
                     <option value="online">Un amigo o familiar</option>
@@ -88,16 +104,21 @@
             </div>
 
             <div class="checkboxes">
-                <div class="terminos_condiciones">
-                    <label for="terminos">Acepto los terminos y condiciones</label>
-                    <input type="checkbox" name="terminos" id="terminos">
+                <div class="terminos_y_ofertas">
+                    <div class="terminos_condiciones">
+                        <label for="terminos">Acepto los terminos y condiciones</label>
+                        <input type="checkbox" name="terminos" id="terminos" required>
+                    </div>
+                    <div class="recibir_ofertas">
+                        <label for="recibir_ofertas">Deseo recibir ofertas de nuevos cursos</label>
+                        <input type="checkbox" name="recibir_ofertas" id="recibir_ofertas">
+                    </div>
                 </div>
-                <div class="recibir_ofertas">
-                    <label for="recibir_ofertas">Deseo recibir ofertas de nuevos cursos</label>
-                    <input type="checkbox" name="recibir_ofertas" id="recibir_ofertas">
+                <div class="enviar">
+                    <input type="submit" name="enviar" id="enviar">
                 </div>
             </div>
-            <input type="submit" name="enviar" id="enviar">
+
         </form>
     </main>
 
