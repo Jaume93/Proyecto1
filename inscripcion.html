@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/mi_estilo.css">
-
+    <title>Formulario</title>
 </head>
 
 <body>
@@ -27,64 +26,100 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="background_home">
-            <h1>
-                <span>L</span>
-                <span>e</span>
-                <span>t</span>
-                <span>'s</span>
-                <span>C</span>
-                <span>o</span>
-                <span>d</span>
-                <span>e</span>
-                <span>r</span>
-            </h1>
-            <h4>consigue tu <span class="meta"> &lt meta &gt </span> en la vida</h4>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/u8YePv5m-ns"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
     </header>
     <main>
-        <h2>Próximas fechas</h2>
-        <div class="fechas">
-            <div class="curso">
-                <div class="fecha">
-                    <p>Lunes</p>
-                    <p><span class="negrita1"> 25 </span></p>
-                    <p>Enero</p>
-                </div>
-                <p><span class="negrita2"> Curso Full-Time </span></p>
-                <p><span class="online"> Online </span></p>
-                <button><a href="./inscripcion.html"> Inscribirme </a></button>
+        <h2>Formulario</h2>
+
+        <form action="formulario">
+            <h4>Datos</h4>
+            <div class="informacion_personal">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+                <label for="Apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" required placeholder="Apellidos">
             </div>
-            <div class="curso">
-                <div class="fecha">
-                    <p>Jueves</p>
-                    <p><span class="negrita1"> 28 </span></p>
-                    <p>Enero</p>
-                </div>
-                <p><span class="negrita2"> Curso Part-Time </span></p>
-                <p><span class="online"> Online </span></p>
-                <button><a href="./inscripcion.html"> Inscribirme </a></button>
+            <div class="informacion_personal">
+                <label for="Email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+
+                <label for="Telefono">Telefono:</label>
+                <input type="tel" name="telefono" id="telefono" required minlength="9" maxlength="11"
+                    placeholder="Telefono">
             </div>
-            <div class="curso">
-                <div class="fecha">
-                    <p>Lunes</p>
-                    <p><span class="negrita1"> 3 </span></p>
-                    <p>Marzo</p>
+            <h4>Tipo de curso</h4>
+            <div class="informacion_curso">
+                <div class="modalidad_curso">
+                    <div class="full_stack_curso">
+                        <input type="radio" name="modalidad" id="full_stack" required>
+                        <label for="full_stack">Web Developer Full-Stack</label>
+                    </div>
+                    <div class="front_end_curso">
+                        <input type="radio" name="modalidad" id="fron_end">
+                        <label for="fron_end">Web Developer Front-End</label>
+                    </div>
+                    <div class="back_end_curso">
+                        <input type="radio" name="modalidad" id="back_end">
+                        <label for="back_end">Web Developer Back-End</label>
+                    </div>
                 </div>
-                <p><span class="negrita2"> Curso Full-Time </span></p>
-                <p><span class="marte">Planeta Marte</span></p>
-                <button><a href="./inscripcion.html"> Inscribirme </a></button>
-                <div class="luz"></div>
-                <img class="persona_cae" src="https://img.icons8.com/material-sharp/24/000000/falling-person.png" />
+                <div class="tiempo_curso">
+                    <div class="full_time_curso">
+                        <input type="radio" name="time" id="full_time" required>
+                        <label for="full_time">Full - Time</label>
+                    </div>
+                    <div class="part_time_curso">
+                        <input type="radio" name="time" id="part_time">
+                        <label for="part_time">Part - Time</label>
+                    </div>
+                </div>
+                <div class="tipo_curso">
+                    <div class="online_curso">
+                        <input type="radio" name="tipo" id="online" required>
+                        <label for="online">Online</label>
+                    </div>
+                    <div class="planeta_marte_curso">
+                        <input type="radio" name="tipo" id="planeta_marte">
+                        <label for="planeta_marte">Planeta Marte</label>
+                    </div>
+                </div>
+            </div>
+            <h4>Dejanos tu mensaje</h4>
+            <div class="textarea">
+                <textarea name="textarea" id="textarea" cols="60" rows="10" maxlength="500"
+                    placeholder="Hola! Me gustaria saber..."></textarea>
             </div>
 
-        </div>
+            <div class="encontrado">
+                <h4>¿Como nos has encontrado?</h4>
+                <label for="encontrado"></label>
+                <select name="encontrado" id="encontrado" required>
+                    <option value="selecion">Selecione una opción</option>
+                    <option value="online">Por internet</option>
+                    <option value="online">A través de redes sociales</option>
+                    <option value="online">Un amigo o familiar</option>
+                    <option value="online">Otros</option>
+                </select>
+            </div>
 
+            <div class="checkboxes">
+                <div class="terminos_y_ofertas">
+                    <div class="terminos_condiciones">
+                        <label for="terminos">Acepto los terminos y condiciones</label>
+                        <input type="checkbox" name="terminos" id="terminos" required>
+                    </div>
+                    <div class="recibir_ofertas">
+                        <label for="recibir_ofertas">Deseo recibir ofertas de nuevos cursos</label>
+                        <input type="checkbox" name="recibir_ofertas" id="recibir_ofertas">
+                    </div>
+                </div>
+                <div class="enviar">
+                    <input type="submit" name="enviar" id="enviar">
+                </div>
+            </div>
+
+        </form>
     </main>
+
     <footer>
         <p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
                 viewBox="0 0 16 16">

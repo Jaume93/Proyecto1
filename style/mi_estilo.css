@@ -99,6 +99,7 @@ h1 > span:hover{
 /*Footer*/
 footer{
     height: 50px;
+    width: 100%;
     background: rgb(14, 13, 13);
     color: darkgrey;
     list-style: none;
@@ -160,9 +161,9 @@ h2{
     text-shadow: 8px 4px 4px rgb(109, 110, 116);;
     font-size: 3.5rem ;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 139px;
     letter-spacing: 0.25rem;
 }
 
@@ -181,6 +182,10 @@ button{
     box-shadow: 3px 3px  2px rgb(66, 65, 65);
     background-color: rgb(248, 245, 238);
     font-weight: 600;
+}
+
+button > a {
+    text-decoration: none;
 }
 
 button:hover{
@@ -302,13 +307,6 @@ button:hover{
 }
 
 /*CONOCENOS*/
-.conocenos{
-    margin-top: 0;
-    padding-top: 130px;
-    color: rgb(63, 63, 143);
-    text-shadow: 8px 4px 4px rgb(109, 110, 116);;
-}
-
 .conocenos_descripcion{
     margin: 65px auto 150px auto;
     width: 80%;
@@ -382,13 +380,8 @@ button:hover{
 /*CONTACTO*/
 svg{
     margin-right: 10px;
-    height: 40px;
-    width: 40px;
-}
-
-.contacto{
-    padding-top: 139px;
-    margin-top: 0;
+    height: 30px;
+    width: 30px;
 }
 
 .contacto_descripcion{
@@ -400,7 +393,6 @@ svg{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .contacto_vias_de_contacto{
@@ -408,6 +400,11 @@ svg{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 25px;
+}
+
+.contacto_vias_de_contacto:last-of-type{
+    margin-bottom: 85px;
 }
 
 .contacto_telf,
@@ -418,23 +415,15 @@ svg{
 }
 
 .num_telf{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 /*Info*/
-.tabla{
-    height: 92.4vh;
-    /* padding-top: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border-collapse: collapse; */
-}
-
+/*Tabla Alumnos*/
 table{
-    width: 60%;
-    height: 60%;
     border-collapse: collapse;
+    margin: auto;
+    width: 80%;
 }
 
 thead th{
@@ -444,26 +433,416 @@ thead th{
 td,
 th{
     border-bottom: 1px solid black;
-    text-align: left;
-}
-
-td{
-    transform: rotateY(90deg);
-}
-
-td:active{
-    transform: none;
+    text-align: center;
+    padding: 10px;
 }
 
 tr:hover{
     background: rgba(234, 234, 240, 0.486);
 }
 
-.alexandra{
-    height: auto;
+tr:hover th,
+tr:hover td{
+    color: rgb(21, 51, 160);
+}
+
+th:last-of-type,
+td:last-of-type{
+    color:rgb(13, 151, 13);
+}
+
+th:first-child{
+    color:rgb(66, 4, 4);
+}
+
+th:nth-of-type(2),
+td:nth-of-type(1){
+    color: rgb(177, 16, 16);
+}
+
+th:nth-of-type(3),
+td:nth-of-type(2){
+    color:rgb(212, 118, 41);
+}
+
+th:nth-of-type(4),
+td:nth-of-type(3){
+    color:rgb(150, 148, 69);
+}
+
+
+/*Lista Horario*/
+dt{
+    font-weight: bold;
+}
+
+.container_lista_horario{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    line-height: 1.8rem;
+}
+
+/*Lista Conocimientos*/
+
+li{
+    line-height: 2rem;
+}
+
+li > * > li{
+    font-weight:normal;
+}
+
+:not(li) > * > li{
+    list-style: none;
+    font-weight:bold;
+}
+
+.container_lista_conocimientos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container_lista_conocimientos  p {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/*Inscripción*/
+form{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+form > div{
+    margin: 8px;
+}
+
+label,
+input,
+select{
+    padding: 5px;
+}
+
+input{
+    width: 40%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+ select{
+    width: auto;
+    background: none;
+}
+
+option{
+    background: rgb(85, 84, 84);
+}
+
+textarea{
+    background: none;
+}
+
+.informacion_personal{
+    display: flex;
+    align-items: flex-start;
+}
+
+.informacion_curso{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.modalidad_curso,
+.tiempo_curso,
+.tipo_curso{
+    display: flex;
+    flex-direction: column;
+}
+
+.tiempo_curso,
+.tipo_curso{
+    justify-content: center;
+    width: 200px;
+}
+
+.full_stack_curso,
+.front_end_curso,
+.back_end_curso,
+.full_time_curso,
+.part_time_curso,
+.online_curso,
+.planeta_marte_curso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.textarea{
+    display: flex;
+    justify-content: center;
+}
+
+.encontrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.encontrado > select{
+    width: auto;
+    margin: auto;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.terminos_y_ofertas{
+    display: flex;
+    flex-direction: column;
+}
+
+.terminos_condiciones,
+.recibir_ofertas{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 0;
+    margin: 0;  
+}
+
+.enviar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#full_stack,
+#fron_end,
+#back_end,
+#full_time,
+#part_time,
+#online,
+#planeta_marte{
     width: auto;
 }
-.alexandra:active{
-    background: darkmagenta;
-    transform: rotateY(90deg);
+
+#terminos,
+#recibir_ofertas{
+    width: auto;
 }
+
+#enviar{
+    width: 120px;
+    height: 40px;
+    padding: 10px 25px;
+    margin: 20px 0 40px 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 3px 3px  2px rgb(66, 65, 65);
+    background-color: rgb(248, 245, 238);
+    font-weight: 600;
+}
+
+#enviar:hover{
+    color: rgb(250, 250, 250);
+    background-color: rgba(27, 27, 26, 0.808);
+    box-shadow: -3px -3px 2px rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px){
+
+    /*NAV*/
+    .navbar{
+        padding: 0;
+        font-size: 15px;
+        position: static;
+    }
+
+    nav ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;  
+    }
+
+    .navbar li{
+        padding: 5px;
+    }
+
+    h2{
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    /*INSCRIPCION FORMULARIO*/
+    form{
+        width: 90%;
+    }
+    
+    .informacion_personal{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .informacion_personal > label{
+        display: none;
+    }
+    
+    .informacion_personal > input{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .informacion_curso{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .modalidad_curso,
+    .tiempo_curso,
+    .tipo_curso{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 1px solid gray;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .tiempo_curso label{
+        width: 100px;
+    }
+
+    #encontrado{
+        width: 100%;
+    }
+
+    .checkboxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enviar{
+        display: flex;
+        justify-content: center;
+    }
+
+    /*CONTACTO*/
+    .contacto_descripcion{
+        padding: 0;
+        margin: 15px auto;
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .contacto_vias_de_contacto{
+        margin: 0;
+    }
+
+    .contacto_vias_de_contacto:last-of-type{
+        margin-bottom: 131px;
+    }
+
+    /*CONOCENOS*/
+    .conocenos_descripcion{
+        font-size: 1rem;
+        text-align: left;
+        margin: 40px auto;
+        line-height: 30px;
+    }
+
+    .profesor{
+        width: 100%;
+        padding: 25px 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+    }
+
+    .foto_profe{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto_profe .foto{
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .foto_profe .nombre_profe{
+        font-size: 1.2rem;
+    }
+
+    .info_profe{
+        width: 65%;
+        font-size: 0.9rem;
+        line-height: 30px;
+        text-align:justify;
+    }
+
+    /*HOME*/
+        h1 + h4{
+        letter-spacing: 0.25rem;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 220px;
+        color: #eee;
+        text-shadow: 3px 2px 0.4px rgb(74, 75, 80);
+    }
+    
+    iframe{
+        display: none;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .background_home{
+        transform: none;
+    }
+
+    .meta{
+        font-size: 1.2rem;
+        color: blue;
+    }
+
+    .fechas{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        height: auto;
+        margin: 50px auto 55px;
+    }
+    .curso{
+        height: 350px;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        border-right: none;
+        border-bottom: 3px solid gray;
+    }
