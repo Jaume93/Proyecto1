@@ -660,7 +660,7 @@ textarea{
     transition: 0.5s;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 450px){
 
     /*NAV*/
     .navbar{
@@ -759,7 +759,7 @@ textarea{
     }
 
     .contacto_vias_de_contacto:last-of-type{
-        margin-bottom: 131px;
+        margin-bottom: 205px;
     }
 
     /*CONOCENOS*/
@@ -785,16 +785,23 @@ textarea{
     }
 
     .foto_profe .foto{
-        height: 9rem;
-        width: 9rem;
+        height: 7rem;
+        width: 7rem;
     }
 
     .foto_profe .nombre_profe{
         font-size: 1.2rem;
     }
 
+    .nombre_profe{
+        font-size: 1rem ;
+        text-align: center;
+        margin: 0;
+        letter-spacing: 0.15rem;
+    }
+
     .info_profe{
-        width: 65%;
+        width: 60%;
         font-size: 0.9rem;
         line-height: 30px;
         text-align:justify;
@@ -879,4 +886,29 @@ textarea{
         display: none;
         
     }
+
+    /*INFO*/
+    .container_lista_conocimientos{
+        width: 80%;
+    }
+    table{
+        border-collapse: collapse;
+        margin: auto;
+        width: 90%;
+    }
+    td,
+    th{
+        border-bottom: 1px solid black;
+        text-align: left;
+        padding: 10px 5px;
+        font-size: 0.85rem;
+    }
+
+    /*Lista Conocimientos*/  
+    .container_lista_conocimientos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
 }
